@@ -411,7 +411,7 @@ if [[ "${REPO_BRANCH}" == "19.07" ]] || [[ "${REPO_BRANCH}" == "master" ]]; then
 fi
 
 if [[ `grep -c "CONFIG_PACKAGE_ntfs-3g=y" ${Home}/.config` -eq '1' ]]; then
-	mkdir -p files/etc/hotplug.d/block && curl -fsSL  https://raw.githubusercontent.com/YLEDE/target/main/10-mount > files/etc/hotplug.d/block/10-mount
+	mkdir -p files/etc/hotplug.d/block && curl -fsSL https://raw.githubusercontent.com/YLEDE/target/main/10-mount > files/etc/hotplug.d/block/10-mount
 fi
 
 
