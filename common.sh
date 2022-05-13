@@ -75,7 +75,7 @@ find . -name 'ddns-scripts_aliyun' -o -name 'ddns-scripts_dnspod' -o -name 'luci
 find . -name 'luci-app-wrtbwmon' -o -name 'wrtbwmon' -o -name 'pdnsd-alt' | xargs -i rm -rf {}
 find . -name 'UnblockNeteaseMusic-Go' -o -name 'UnblockNeteaseMusic' -o -name 'luci-app-unblockmusic' | xargs -i rm -rf {}
 rm -rf feeds/packages/libs/libcap
-git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+git clone https://github.com/nantayo/passwall package/luci-app-passwall
 rm -rf package/luci-app-passwall/{v2ray-core,v2ray-plugin,xray-core,xray-plugin}
 # git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
 git clone https://github.com/281677160/ssr package/luci-app-ssr-plus
